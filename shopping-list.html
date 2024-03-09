@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Shopping list</title>
+        <link rel="icon" type="image/svg" href="/js_99_NataliaIvasiv/assets/favicon-215c054c.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" />
+  <script type="module" crossorigin src="/js_99_NataliaIvasiv/assets/vendor-e2ce0d38.js"></script>
+  <script type="module" crossorigin src="/js_99_NataliaIvasiv/assets/support-41469bdb.js"></script>
+  <link rel="stylesheet" href="/js_99_NataliaIvasiv/assets/support-638049eb.css">
+  <link rel="stylesheet" href="/js_99_NataliaIvasiv/assets/vendor-aa8b7909.css">
+</head>
+<body>
+    <header class="header">
+  <div class="container content-wrapper">
+    <!-- nav-bar -->
+
+    <nav class="nav">
+      <!-- logo -->
+      <div class="logo">
+        <a href="./index.html" class="header-logo-link">
+          <svg class="header-logo-svg" width="24" height="24">
+            <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-logo"></use>
+          </svg>
+          <svg class="header-logo-name" width="77" height="14">
+            <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-Bookshelf"></use>
+          </svg>
+        </a>
+      </div>
+
+      <!-- nav-list -->
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a href="./index.html" class="nav-link-home nav-link">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="./shopping-list.html" class="nav-link-shopping-list nav-link"
+            >Shopping list
+            <svg width="20" height="20">
+              <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-lock1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- theme switcher -->
+
+    <div class="switch-signup-wrapper">
+      <div class="switch_burger-menu-wrapper">
+        <div id="theme-switcher">
+          <input
+            type="checkbox"
+            class="switch-theme-checkbox"
+            id="switch-theme-checkbox"
+          />
+          <label
+            for="switch-theme-checkbox"
+            class="switch-theme-checkbox-label"
+          >
+            <span class="switch-ball"></span>
+          </label>
+        </div>
+
+        <button type="button" class="burger-menu-open-btn">
+          <svg class="mobile-menu-svg" width="28" height="28">
+            <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-align-left11"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="burger-menu-close-btn">
+          <svg class="mobile-menu-svg" width="28" height="28">
+            <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-x-close1"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- sign-up button -->
+
+      <button type="button" class="header-login-btn" id="openModalBtn">
+        Sign up
+        <svg width="20" height="20">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-arrow-narrow-right1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- burger menu -->
+
+  <div class="burger-menu">
+    <div class="container mob-content-wrapper">
+      <button type="button" class="mobile-login-btn">
+        Sign up
+        <svg width="20" height="20">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-arrow-narrow-right1"></use>
+        </svg>
+      </button>
+      <!-- this block is needed if i decide to do a sign-in -->
+      <ul class="burger-nav-list">
+        <li class="burger-list-item"><a href="./index.html" class="burger-link-home burger-link current">Home</a></li>
+        <li class="burger-list-item">
+          <a href="./shopping-list.html" class="burger-link-shopping burger-link"
+            >Shopping list
+            <svg width="20px" height="20px" class="burger-shopping-svg">
+              <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-lock1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <img
+        src="/js_99_NataliaIvasiv/assets/bg-img-burger-menu-4667eb5f.png"
+        alt="backgroung illustrating the books covers"
+        class="burger-menu-bg-img"
+      />
+      <button class="mobile-logout-btn" type="button">
+        Log out
+        <svg width="20px" height="20px">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-arrow-narrow-right1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- modal window for sign-in /sign-up -->
+
+<div class="modal-sign-container">
+    
+
+  <div id="signupModal" class="modal">
+    <svg class="closeModalBtn" width="28" height="28">
+      <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-x-close1"></use>
+    </svg>
+
+    <form id="signUpForm" class="sign-up-form" action="https://formspree.io/f/xbjbrrao"
+    method="POST">
+      <input class="sign-input" type="text" placeholder="Name" id="nameInput" name='name' required/>
+      <div class="input-container">
+        <input class="sign-input" type="email" placeholder="Email" id="emailInput" name='email' required />
+        <svg class='input-svg' width="28" height="28">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-mail"></use>
+        </svg>
+      </div>
+      <div class="input-container">
+        <input class="sign-input" type="password" placeholder="Password" id="passwordInput" name='password' required />
+        <svg class='input-svg' width="28" height="28">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-lock"></use>
+        </svg>
+      </div>
+      <button class="signUpBtn" type="submit">Sign Up</button>
+    </form>
+
+    <form id="signInForm" class="sign-in-form" action="https://formspree.io/f/xbjbrrao"
+    method="POST">
+      <div class="input-container">
+        <input class="sign-input" type="email" placeholder="Email" id="emailInputSignIn" name='email' required />
+        <svg class='input-svg' width="28" height="28">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-mail"></use>
+        </svg>
+      </div>
+      <div class="input-container">
+        <input class="sign-input" type="password" placeholder="Password" id="passwordInputSignIn" name='password' required />
+        <svg class='input-svg' width="28" height="28">
+          <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-lock"></use>
+        </svg>
+      </div>
+      <button class="signInBtn" type="submit">Sign In</button>
+    </form>
+
+    <div class="signupOptions">
+      <button class="signUpOption">Sign Up</button>
+      <button class="signInOption">Sign In</button>
+    </div>
+  </div>
+</div>
+    <main>
+        <section class="main-shopping-list-section main-section">
+            <div class="container shopping-list-container">
+                <div class="shop-support">
+                    <div class="support">
+  <div class="support-title-wrapper">
+    <h3 class="support-main-title">Support Ukraine</h3>
+    <svg class="support-emblem" width="20" height="32">
+      <use href="/js_99_NataliaIvasiv/assets/symbol-defs-b5bfa89c.svg#icon-Group-2"></use>
+    </svg>
+  </div>
+  <div class="swiper">
+    <ul class="support-list-js swiper-wrapper"></ul>
+  </div>
+  <button
+    class="support-btn swiper-button-next"
+    type="button"
+    aria-label="swipe fund`s list down button"
+  >
+    <svg class="support-btn-icon" width="32" height="32">
+      <use href="/bookshelf-team-project/assets/symbol-defs-b5bfa89c.svg#icon-slider-down"></use>
+    </svg>
+  </button>
+</div>
+
+                </div>
+                <div class="shopping-list-flex">
+                    <h2 class="shopping-list-title">Shopping <span class="shopping-list-title-span">List</span></h2> 
+                    <ul class="shopping-list"></ul>
+                </div>
+            </div>
+        </section>
+    
+    
+    </main>
+    
+</body>
+</html>
